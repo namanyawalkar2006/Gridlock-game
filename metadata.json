@@ -1,0 +1,8 @@
+{
+  "name": "GridLock: Daily Showdown",
+  "description": "A 4x4 matrix grid game where users match a daily sequence, featuring a dark-mode arcade palette and shareable emoji results.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
