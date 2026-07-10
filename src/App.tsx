@@ -111,9 +111,14 @@ export default function App() {
       }
     } catch (err) {
       console.error("Verification failed", err);
+      audio.playError();
+      setErrorIndex(index);
+      setMistakes(prev => new Set(prev).add(index));
       // Fallback reset
-      setSequence([]);
-      setErrorIndex(null);
+      setTimeout(() => {
+        setSequence([]);
+        setErrorIndex(null);
+      }, 500);
     }
   };
 
